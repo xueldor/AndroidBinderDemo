@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/buttonIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="50dp"
+        android:text="addBookIn" />
+
+    <Button
+        android:id="@+id/buttonOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonIn"
+        android:layout_alignBottom="@+id/buttonIn"
+        android:layout_marginLeft="102dp"
+        android:layout_toRightOf="@+id/buttonIn"
+        android:text="addBookOut" />
+
+    <Button
+        android:id="@+id/buttonInOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonOut"
+        android:layout_alignBottom="@+id/buttonOut"
+        android:layout_marginLeft="86dp"
+        android:layout_toRightOf="@+id/buttonOut"
+        android:text="addBookInOut" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonInOut"
+        android:layout_alignBottom="@+id/buttonInOut"
+        android:layout_marginLeft="86dp"
+        android:layout_toRightOf="@+id/buttonInOut"
+        android:text="register" />
+
+</RelativeLayout>
