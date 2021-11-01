@@ -49,7 +49,6 @@ public class Book implements Parcelable {
 	}
 
 	public void readFromParcel(Parcel dest) {
-		// ע�⣬�˴��Ķ�ֵ˳��Ӧ���Ǻ�writeToParcel()������һ�µ�
 		name = dest.readString();
 		price = dest.readInt();
 	}
